@@ -11,7 +11,6 @@ while True:
     list_choise = ["rock", "paper", "scissors"]
     player_choise = input("\n%s, do you want to choose rock, paper or scissors? " % (name)).lower()
     comp_choise = list_choise[randint(0,2)]
-
     if player_choise == comp_choise:
         print("    It's a tie! \n    Score: %s %s : %s Computer" % (name, player_score, comp_score))
     elif player_choise == "rock":
@@ -37,7 +36,6 @@ while True:
             print("    Computer´s scissors beats your paper! \n    Score: %s %s : %s Computer" % (name, player_score, comp_score))
     else:
         print("    Invalid input! You have not entered rock, paper or scissors, try again. \n    Score: %s %s : %s Computer" % (name, player_score, comp_score))
-
     if player_score == 3 or comp_score == 3:
         print("\nTotal score: %s %s : %s Computer" % (name, player_score, comp_score))
         if player_score > comp_score:
